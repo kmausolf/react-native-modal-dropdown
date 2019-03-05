@@ -36,7 +36,7 @@ export default class ModalDropdown extends Component {
     disabled: PropTypes.bool,
     scrollEnabled: PropTypes.bool,
     defaultIndex: PropTypes.number,
-    defaultValue: PropTypes.string,
+    defaultValue: PropTypes.object,
     options: PropTypes.array,
 
     accessible: PropTypes.bool,
@@ -64,7 +64,10 @@ export default class ModalDropdown extends Component {
     disabled: false,
     scrollEnabled: true,
     defaultIndex: -1,
-    defaultValue: 'Please select...',
+    defaultValue:{
+      title: 'Please select...',
+      icon: null
+    },
     options: null,
     animated: true,
     showsVerticalScrollIndicator: true,
@@ -83,7 +86,10 @@ export default class ModalDropdown extends Component {
       accessible: !!props.accessible,
       loading: !props.options,
       showDropdown: false,
-      buttonText: props.defaultValue,
+      buttonText: {
+        title: props.defaultValue.title,
+        icon: props.defaultValue.icon
+      },
       selectedIndex: props.defaultIndex
     };
   }
@@ -96,7 +102,7 @@ export default class ModalDropdown extends Component {
     if (selectedIndex < 0) {
       selectedIndex = defaultIndex;
       if (selectedIndex < 0) {
-        buttonText = defaultValue;
+        buttonText = defaultValue.title;
       }
     }
     this._nextValue = null;
@@ -173,7 +179,7 @@ export default class ModalDropdown extends Component {
                         onPress={this._onButtonPress}
       >
         {
-          children ||
+          children(buttonText) ||
           (
             <View style={styles.button}>
               <Text style={[styles.buttonText, textStyle]}
