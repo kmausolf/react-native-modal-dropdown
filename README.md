@@ -1,6 +1,6 @@
 [![npm version](https://badge.fury.io/js/react-native-modal-dropdown.svg)](https://badge.fury.io/js/react-native-modal-dropdown)
 
-# react-native-modal-dropdown
+# react-native-modal-dropdown-kolyde-clone
 A react-native dropdown/picker/selector component for both Android & iOS.
 
 ## Features
@@ -12,35 +12,18 @@ A react-native dropdown/picker/selector component for both Android & iOS.
 - Controllable with API by code. (Show/Hide/Select)
 - Change everything into a dropdown list trigger.
 
-## Demo
-<img src="https://github.com/sohobloo/react-native-modal-dropdown/blob/master/docs/demo_1.gif?raw=true" width = "160" height = "287.5" alt="Demo 1"/> <img src="https://github.com/sohobloo/react-native-modal-dropdown/blob/master/docs/demo_2.gif?raw=true" width = "160" height = "287.5" alt="Demo 2"/> <img src="https://github.com/sohobloo/react-native-modal-dropdown/blob/master/docs/demo_3.gif?raw=true" width = "160" height = "287.5" alt="Demo 3"/>
-
-You can find them in the example.
-
 ## Update History
-
-### v0.6.2
-- Fix [#139](https://github.com/sohobloo/react-native-modal-dropdown/issues/139) `renderButtonText` renders \[object Object] if there is a call to `setState` in `onSelect` or `renderButtonText` functions
-
-### v0.6.1
-- Fix [#127](https://github.com/sohobloo/react-native-modal-dropdown/issues/127) `renderButtonText` does not work on `select(idx)`  (Thanks to [@swb2016](https://github.com/swb2016))
-- Code optimization.
-
-### v0.6.0
-- Introduce `renderButtonText` property to extract button text from object array data.
-
-[Full update history list](https://github.com/sohobloo/react-native-modal-dropdown/wiki/Update-History)
 
 ## Installation
 ```sh
-npm i react-native-modal-dropdown -save
+npm i --save react-native-modal-dropdown-kolyde-clone 
 ```
 
 ## Usage
 ### Basic
 Import this module:
 ```javascript
-import ModalDropdown from 'react-native-modal-dropdown';
+import ModalDropdown from 'react-native-modal-dropdown-kolyde-clone';
 ```
 Use as a component:
 ```javascript
