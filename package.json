@@ -1,6 +1,6 @@
 {
   "name": "react-native-modal-dropdown-kolyde-clone",
-  "version": "0.0.1",
+	  "version": "0.6.3",
   "description": "A react-native dropdown component for both iOS and Android.",
   "keywords": [
     "react",
